@@ -1,29 +1,17 @@
-# Next.js + Tailwind CSS Example
+# React Conditional Selection
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+React Conditional Selection is a useful way to build cascading selection with large amount of options and business rules behind of them.
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+# How it works
 
-## Preview
+Business rules are defined on almost every row of data and each time when selection object changes, there is starting validation process. Validation relies on comparing rules defined on every option with current selection object.
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+## Thanks to
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+To comparing this stuff I've been used [great library](https://github.com/protobi/query) written by Pieter Sheth-Voss.
 
-## Deploy your own
+To translate SQL to MongoDB syntax I've been used [Mongo DQL plugin](https://github.com/allmas-tn/mongo-dql).
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+Also thanks to Jad Watson for great [React Select](https://github.com/jedwatson/react-select).
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+And of course thaks to [React Team](https://reactjs.org/community/team.html) for React.
