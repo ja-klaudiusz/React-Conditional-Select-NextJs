@@ -25,10 +25,10 @@ const RuleTranslator = () => {
 
   return (
     <>
-      <h2 className="text-4xl pt-6 text-primary-100 font-bold font-title">
+      <h2 className="text-4xl pt-6 text-primary-100 font-black font-title">
         Rule Translator
       </h2>
-      <p className="text-primary-100 w-full">
+      <p className="text-primary-100 w-full text-lg">
         Rules are writen in MongoDB syntax but if you are more familiar with SQL
         syntax you can use belowing translator:
       </p>

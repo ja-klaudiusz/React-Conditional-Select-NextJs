@@ -7,6 +7,7 @@ import Bg from "../components/Other/Bg";
 import RuleTranslator from "../components/Other/RuleTranslator";
 import Editable from "../components/Other/Editable";
 import Thanks from "../components/Other/Thanks";
+import Github from "../components/Other/Github";
 import data from "../data";
 
 export default function Home() {
@@ -22,11 +23,21 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center min-h-screen py-2 z-10 relative ">
         <Head>
           <title>React Conditional Selection</title>
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=0.8, maximum-scale=5.0, minimum-scale=0.8"
+          ></meta>
+          <meta
+            name="description"
+            content="React Conditional Selection is a useful way to build cascading
+                  select with large amount of options, categories and business
+                  rules aimed at controlling the dependencies between them."
+          />
           <link rel="icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
           <link
-            href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&display=swap"
             rel="stylesheet"
           />
           <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
@@ -52,24 +63,29 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-around max-w-7xl mt-6 sm:w-full">
             <div className="w-full px-2 py-2 mx-auto">
               <div className="flex flex-col items-start justify-center space-y-6 text-left">
-                <h1 className="text-7xl text-primary-100 border-b border-primary-500 pb-10 mb-4 w-full font-title">
+                <Github />
+                <h1 className="text-7xl text-primary-100 border-b border-primary-500 pb-10 mb-4 w-full font-title font-black">
                   React <br></br> Conditional Selection
                 </h1>
-                <p className="text-primary-100 w-full ">
+
+                <p className="text-primary-100 md:w-9/12 w-full text-lg">
                   React Conditional Selection is a useful way to build cascading
-                  selection with large amount of options and business rules
-                  behind of them.
+                  select with large amount of options, categories and business
+                  rules aimed at controlling the dependencies between them.
                 </p>
-                <h2 className="text-4xl pt-6 text-primary-100 font-title">
+                <h2 className="text-4xl pt-6 text-primary-100 font-title font-black">
                   How it works
                 </h2>
-                <p className="text-primary-100 md:w-3/5 w-full">
-                  Business rules are defined on almost every row of data and
-                  each time when selection object changes, there is starting
-                  validation process. Validation relies on comparing rules
-                  defined on every option with current selection object.
+                <p className="text-primary-100 md:w-9/12 w-full text-lg">
+                  Business rules are defined on almost every row of data. Each
+                  time when object of selection changes, there is starting
+                  validation process. Rule decide about when option or select
+                  should render. Validation relies on comparing rules with
+                  selection object. Categories, selects or options are rendered
+                  only when its rules are matching to current object of
+                  selection.
                 </p>
-                <h2 className="text-4xl pt-6 text-primary-100 font-title">
+                <h2 className="text-4xl pt-6 text-primary-100 font-title font-black">
                   Basic example
                 </h2>
                 <div className="w-full flex flex-col md:flex-row items-center justify-center space-y-6">
@@ -79,7 +95,7 @@ export default function Home() {
                     exampleMode={true}
                   />
                 </div>
-                <h2 className="text-4xl pt-6 text-primary-100 font-title">
+                <h2 className="text-4xl pt-6 text-primary-100 font-title font-black">
                   Example with default selection
                 </h2>
 
@@ -104,19 +120,55 @@ export default function Home() {
                 {onlyOnClient && <Editable />}
 
                 <RuleTranslator />
+                <h2 className="text-4xl pt-6 text-primary-100 font-title font-black">
+                  License
+                </h2>
+                <p className="text-primary-100 md:w-9/12 w-full text-lg">MIT</p>
                 <Thanks />
               </div>
             </div>
           </div>
         </main>
 
-        <footer className="flex items-center justify-center w-full h-24 text-primary-100">
+        <footer className="flex flex-col items-center justify-center w-full text-primary-100 leading-6">
           <p className="text-center">
-            Copyright © Klaudiusz Marszałek, 2021. MITNFA Licensed<br></br>
-            <strong>GitHub</strong>{" "}
-            <a href="https://github.com/ja-klaudiusz/React-Conditional-Selection">
-              React Conditional Selection
-            </a>
+            Build by Klaudiusz Marszałek. Please support me by leaving a{" "}
+            <strong>
+              <a href="https://github.com/ja-klaudiusz/React-Conditional-Selection">
+                ★ @github
+              </a>
+            </strong>
+          </p>
+          <form
+            className="w-full text-center mt-4"
+            action="https://www.paypal.com/donate"
+            method="post"
+            target="_top"
+          >
+            <input
+              type="hidden"
+              name="hosted_button_id"
+              value="VVVUQY34AK24A"
+            />
+            <input
+              type="image"
+              src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
+              border="0"
+              name="submit"
+              title="PayPal - The safer, easier way to pay online!"
+              alt="Donate with PayPal button"
+            />
+            <img
+              alt=""
+              border="0"
+              src="https://www.paypal.com/en_PL/i/scr/pixel.gif"
+              width="1"
+              height="1"
+              className="h-0"
+            />
+          </form>
+          <p className="bg-white px-6 py-2 text-center text-black rounded-lg mb-2 mt-2">
+            Hosted on ▲ Vercel
           </p>
         </footer>
       </div>

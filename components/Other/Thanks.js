@@ -3,10 +3,10 @@ import React from "react";
 const Thanks = () => {
   return (
     <>
-      <h2 className="text-4xl pt-6 text-primary-100 font-bold font-title">
+      <h2 className="text-4xl pt-6 text-primary-100 font-black font-title">
         Thanks to
       </h2>
-      <p className="text-primary-100 w-full">
+      <p className="text-primary-100 w-full text-lg">
         To comparing this stuff I've been used{" "}
         <a href="https://github.com/protobi/query" className="font-bold">
           great library
