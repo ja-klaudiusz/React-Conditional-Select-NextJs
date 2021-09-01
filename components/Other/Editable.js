@@ -17,13 +17,13 @@ const Editable = () => {
           <h2 className="text-4xl pt-6 text-primary-100 font-black font-title">
             Live edit
           </h2>
-          <div className="w-full flex flex-col md:flex-row items-start justify-center space-y-6">
+          <div className="w-full flex flex-col md:flex-row items-start justify-center">
             <div
               className={
-                " md:w-1/2 w-full text-sm text-left rounded-3xl mr-6 p-6 border-4 " +
+                " md:w-1/2 w-full text-sm text-left rounded-3xl md:mr-6 mr-0 md:mb-0 mb-8 p-6 border-4 " +
                 (editorError
                   ? "bg-error-700 border-error-800"
-                  : "bg-primary-900  border-primary-600")
+                  : "bg-primary-900  border-primary-550")
               }
             >
               <pre className="pb-1 text-info-250">Paste your data:</pre>
@@ -31,7 +31,7 @@ const Editable = () => {
                 renderThumbVertical={({ style, ...props }) => (
                   <div
                     {...props}
-                    style={{ ...style, backgroundColor: "#262042" }}
+                    style={{ ...style, backgroundColor: "#2e2333" }}
                   />
                 )}
                 autoHeight
@@ -76,7 +76,7 @@ const Editable = () => {
         Try it on CodeSandbox
       </h2>
       <div
-        className="w-full p-6 border-4 border-primary-600 rounded-3xl"
+        className="w-full p-6 border-4 border-primary-550 rounded-3xl"
         dangerouslySetInnerHTML={{
           __html: `<iframe src="https://codesandbox.io/embed/react-conditional-selection-75e7s?fontsize=14&hidenavigation=1&module=%2Fsrc%2FComponents%2FConditionalSelection.js&theme=dark&view=editor"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"

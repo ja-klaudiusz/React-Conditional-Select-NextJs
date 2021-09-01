@@ -20,19 +20,28 @@ export default function Home() {
   }, []);
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen py-2 z-10 relative ">
+      <div className="flex flex-col items-center justify-center min-h-screen py-2 z-10 relative">
         <Head>
           <title>React Conditional Selection</title>
           <meta
             name="viewport"
-            content="width=device-width, initial-scale=0.8, maximum-scale=1.0, minimum-scale=0.8"
+            content="width=device-width, initial-scale=0.8, maximum-scale=1.0, minimum-scale=0.8, user-scalable=0"
           ></meta>
           <meta
             name="description"
-            content="React Conditional Selection is a useful way to build cascading
-                  select with large amount of options, categories and business
-                  rules aimed at controlling the dependencies between them."
+            content="React Conditional Selection is a useful way to build cascading dropdown with large amount of options, categories and business rules aimed at controlling the dependencies between of them."
           />
+          <meta property="og:title" content="React Conditional Selection" />
+          <meta
+            property="og:description"
+            content="Try the new way to build cascading dropdown with large amount of options, categories and business rules behind of them."
+          />
+          <meta
+            property="og:url"
+            content="https://react-conditional-select.vercel.app/"
+          />
+          <meta property="og:image" content="/rcs.jpg" />
+
           <link rel="icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
@@ -40,7 +49,6 @@ export default function Home() {
             href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&display=swap"
             rel="stylesheet"
           />
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
@@ -64,14 +72,14 @@ export default function Home() {
             <div className="w-full px-2 py-2 mx-auto">
               <div className="flex flex-col items-start justify-center space-y-6 text-left">
                 <Github />
-                <h1 className="text-7xl text-primary-100 border-b border-primary-500 pb-10 mb-4 w-full font-title font-black">
+                <h1 className="text-7xl text-primary-100 border-b border-info-800 pb-10 w-full font-title font-black">
                   React <br></br> Conditional Selection
                 </h1>
 
-                <p className="text-primary-100 md:w-9/12 w-full text-lg">
+                <p className="text-primary-100 md:w-9/12 w-full text-lg pt-3">
                   React Conditional Selection is a useful way to build cascading
-                  select with large amount of options, categories and business
-                  rules aimed at controlling the dependencies between them.
+                  dropdown with large amount of options, categories and business
+                  rules aimed at controlling the dependencies between of them.
                 </p>
                 <h2 className="text-4xl pt-6 text-primary-100 font-title font-black">
                   How it works
@@ -88,7 +96,7 @@ export default function Home() {
                 <h2 className="text-4xl pt-6 text-primary-100 font-title font-black">
                   Basic example
                 </h2>
-                <div className="w-full flex flex-col md:flex-row items-center justify-center space-y-6">
+                <div className="w-full flex flex-col md:flex-row items-center justify-center">
                   <ConditionalSelection
                     data={data}
                     showRequired={true}
@@ -99,7 +107,7 @@ export default function Home() {
                   Example with default selection
                 </h2>
 
-                <div className="w-full flex flex-col md:flex-row items-center justify-center space-y-6">
+                <div className="w-full flex flex-col md:flex-row items-center justify-center">
                   <ConditionalSelection
                     exampleMode={true}
                     data={data}
@@ -161,7 +169,7 @@ export default function Home() {
             <img
               alt=""
               border="0"
-              src="https://www.paypal.com/en_PL/i/scr/pixel.gif"
+              src="https://www.paypal.com/en_US/i/scr/pixel.gif"
               width="1"
               height="1"
               className="h-0"

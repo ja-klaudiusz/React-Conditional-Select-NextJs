@@ -20,7 +20,7 @@ const CategoryItem = ({
   return (
     <>
       {showCategoryName() && (
-        <h3 className="text-2xl text-primary-100 mb-4 pt-4 font-title">
+        <h3 className="text-2xl text-primary-100 mb-4 first:pt-0 pt-4 font-title">
           {categoryName}
         </h3>
       )}

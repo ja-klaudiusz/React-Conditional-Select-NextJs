@@ -30,10 +30,10 @@ const RuleTranslator = () => {
       </h2>
       <p className="text-primary-100 w-full text-lg">
         Rules are writen in MongoDB syntax but if you are more familiar with SQL
-        syntax you can use belowing translator:
+        syntax you can use translator. Just type below:
       </p>
       <input
-        className="w-full p-6 rounded-3xl bg-primary-900 border-4 border-primary-600 text-primary-100 outline-none"
+        className="w-full p-6 rounded-3xl bg-primary-900 border-4 border-primary-550 text-primary-100 outline-none"
         type="text"
         onChange={(e) => setSqlRule(e.target.value)}
         value={sqlRule}

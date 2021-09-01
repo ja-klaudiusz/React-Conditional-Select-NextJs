@@ -44,7 +44,7 @@ const Configurator = ({
   return (
     <>
       {exampleMode && (
-        <div className="light md:w-1/2 w-full text-sm text-left mr-6 p-6 bg-primary-800 rounded-3xl">
+        <div className="light md:w-1/2 w-full text-sm text-left bg-primary-800 rounded-3xl md:order-none order-last md:mr-6 mr-0  md:mt-0 mt-10 p-6">
           {
             <div
               dangerouslySetInnerHTML={{
