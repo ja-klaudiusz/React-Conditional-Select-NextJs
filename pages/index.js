@@ -31,6 +31,9 @@ export default function Home() {
             name="description"
             content="React Conditional Selection is a useful way to build cascading dropdown with large amount of options, categories and business rules aimed at controlling the dependencies between of them."
           />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:site" content="@JaKlaudio" />
+          <meta name="twitter:creator" content="@JaKlaudio" />
           <meta property="og:title" content="React Conditional Selection" />
           <meta
             property="og:description"
