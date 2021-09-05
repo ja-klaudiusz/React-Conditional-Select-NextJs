@@ -9,6 +9,7 @@ import Editable from "../components/Other/Editable";
 import Thanks from "../components/Other/Thanks";
 import Github from "../components/Other/Github";
 import data from "../data";
+import Installation from "../components/Other/Installation";
 
 export default function Home() {
   const [onlyOnClient, setOnlyOnClient] = useState(false);
@@ -139,6 +140,7 @@ export default function Home() {
                 {onlyOnClient && <Editable />}
 
                 <RuleTranslator />
+                <Installation />
                 <h2 className="text-4xl pt-6 text-primary-100 font-title font-black">
                   License
                 </h2>
