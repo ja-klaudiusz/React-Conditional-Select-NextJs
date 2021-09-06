@@ -19,7 +19,7 @@ const Installation = () => {
         className="w-full text-sm text-left mr-6 p-6 bg-primary-800 rounded-3xl text-info-150"
         dangerouslySetInnerHTML={{
           __html:
-            "<pre>" +
+            "<pre style='overflow:hidden; max-width:80vw; margin: 0 auto;'>" +
             highlight(
               `import ConditionalSelection from "react-conditional-selection";
 
