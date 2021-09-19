@@ -28,6 +28,7 @@ export default function Home() {
             name="viewport"
             content="width=device-width, initial-scale=0.8, maximum-scale=1.0, minimum-scale=0.8, user-scalable=0"
           ></meta>
+          <meta name="title" content="React Conditional Selection" />
           <meta
             name="description"
             content="React Conditional Selection is a useful way to build cascading dropdown with large amount of options, categories and business rules aimed at controlling the dependencies between of them."
@@ -35,7 +36,10 @@ export default function Home() {
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@JaKlaudio" />
           <meta name="twitter:creator" content="@JaKlaudio" />
-
+          <meta
+            property="twitter:url"
+            content="https://react-conditional-select.vercel.app"
+          ></meta>
           <meta name="twitter:title" content="React Conditional Selection" />
           <meta
             name="twitter:description"
