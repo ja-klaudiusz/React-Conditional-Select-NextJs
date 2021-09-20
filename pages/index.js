@@ -45,7 +45,10 @@ export default function Home() {
             name="twitter:description"
             content="Try the new way to build cascading dropdown with large amount of options, categories and business rules behind of them."
           />
-          <meta name="twitter:image" content="/rcs.jpg" />
+          <meta
+            name="twitter:image"
+            content="https://react-conditional-select.vercel.app/rcs.jpg"
+          />
 
           <meta property="og:title" content="React Conditional Selection" />
           <meta
